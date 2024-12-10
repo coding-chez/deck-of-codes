@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8edeb; /* Soft blue background */
+}
+
+.container {
+    width: 450px;
+    min-height: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #d4a373;
+    border: 2px solid #d4a373;
+    border-radius: 5px;
+    text-align: center;
+}
+label, input[type="text"], .output-box { /* Target output boxes with class */
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.output-section { /* New class for each output section */
+  /*  margin-bottom: 5px;*/
+}
+
+/* Style for output boxes */
+.output-box {
+	background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center; /* Center text within output boxes */
+}
+
+button {
+    background-color: #d6ccc2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6c757d;
+}
+
+#error-message {
+    color: red;
+    margin-bottom: 10px;
+}

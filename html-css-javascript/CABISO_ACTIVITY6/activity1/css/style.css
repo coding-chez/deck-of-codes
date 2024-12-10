@@ -1,0 +1,90 @@
+body {
+    /* Remove background image styles */
+    transition: background-color 0.5s ease-in-out; /* Transition for background color */
+    background-color: white; /* Default background color */
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.switch-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mode-label {
+    margin-bottom: 5px;
+}
+
+#mode-text {
+    position: absolute; /* Adjust positioning as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px; /* Adjust spacing as needed */
+    color: black; /* Set default text color */
+}
+
+body.dark-mode #mode-text {
+    color: white; /* Change text color in dark mode */
+}
+
+.switch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px; /* Adjust icon size as needed */
+}
+
+.slider .fa-moon {
+    display: none; /* Initially hide the moon icon */
+}
+
+input:checked + .slider {
+    background-color: #fff; /* Use white padding */
+}
+
+input:checked + .slider .fa-moon {
+    display: block; /* Show moon icon when checked (dark mode) */
+}
+
+input:checked + .slider .fa-sun {
+    display: none; /* Hide sun icon when checked (dark mode) */
+}

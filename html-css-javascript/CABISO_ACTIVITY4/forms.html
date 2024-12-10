@@ -1,0 +1,145 @@
+<!-- ACTIVITY 4.1: HTML Forms
+this file shall have a registration website utilizing HTML forms, that must include the following input fields: 
+Name, Birthday, Gender, Email, Password and Submit Button. may add any additional input fields that you think are necessary to create your personalized registration form page 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 4.1 | HTML Forms</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #d1dff6, #92b6f0);
+            font-family: 'Helvetica', sans-serif;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e6f3ff;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+            box-sizing: border-box;
+        }
+        
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e6f3ff;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #99ccff;
+        }
+        
+        input[type="submit"] {
+            background-color: #3385ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #2666cc;
+        }
+        
+        .gender-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .gender-container label {
+            margin-right: 5px;
+        }
+        
+        .gender-container input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            
+            <label for="gender">Gender:</label>
+            <div class="gender-container">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <img src="male-icon.png" width="25px" height = "25px">
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <img src="female-icon.png" width="25px" height = "25px">
+                    Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other">
+                    <img src="other-icon.png" width="25px" height = "25px">
+                    Other
+                </label>
+            </div>
+            
+            <label for="program_year">Program & Year Level:</label>
+            <input type="text" id="program_year" name="program_year" placeholder="Enter your program and year level" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

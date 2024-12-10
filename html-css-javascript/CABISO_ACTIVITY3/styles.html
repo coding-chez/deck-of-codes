@@ -1,0 +1,72 @@
+<!-- ACTIVITY 3.3: HTML Styles
+
+this file shall include the following: create a personal profile, focusing on centering text, changing the color of text, and more-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ACTIVITY 3.3 | HTML Styles</title>
+<style>
+body {
+  font-family: Verdana;
+}
+
+.container {
+  background-color: #f8f8f8;
+  border: 2px solid #C9C9C9;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile-picture {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-info {
+  font-family: Verdana;
+  margin-left: 160px;
+  padding: 10px;
+}
+
+.profile-info p {
+  color: #333;
+}
+
+.profile-info span {
+  font-weight: bold;
+  color: #333;
+}
+</style>
+</head>
+
+<body>
+<h2 style="text-align: center; color: navy;">My Personal Profile</h2>
+
+<div class="container">
+  <img src="profile_picture.jpg" class="profile-picture">
+  <div class="profile-info">
+    <p style = "line-height: 25px;"> 
+      <span>Name:</span> John Doe<br>
+      <span>Age:</span> 25<br>
+      <span>Occupation:</span> Web Developer<br>
+      <span>Location:</span> City, Country<br>
+    </p>
+  </div>
+</div>
+<br>
+
+<p style="color: #555; margin-left: 10px">Hello! I'm John Doe, a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive and visually appealing websites. In my free time, I enjoy experimenting with new coding techniques and frameworks.</p>
+
+<ul style="margin-top: 30px; list-style-type: square">
+  <li style="color: green">HTML</li>
+  <li style="color: blue">CSS</li>
+  <li style="color: orange">JavaScript</li>
+  <li style="color: red">React</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///Applications/XAMPP/xamppfiles/htdocs/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>FINAL PROJECT | User Registration</title>
+  <link rel="stylesheet" type="text/css" href="./FINAL PROJECT _ User Registration_files/style.css">
+  <script src="./FINAL PROJECT _ User Registration_files/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>User Registration</h2>
+    <form action="file:///Applications/XAMPP/xamppfiles/htdocs/register.php" method="POST" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required="">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required="">
+      </div>
+      <div class="form-group">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required="">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="Male" name="gender" value="Male" required="">
+          <label for="Male" style="font-weight: normal">Male</label>
+          <input type="radio" id="Female" name="gender" value="Female" required="">
+          <label for="Female" style="font-weight: normal">Female</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required="">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required="">
+        <span id="passwordError" style="color: red;"></span>
+      </div>
+      <!-- <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div> -->
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body></html>

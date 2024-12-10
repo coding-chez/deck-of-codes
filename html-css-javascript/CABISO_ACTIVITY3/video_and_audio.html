@@ -1,0 +1,37 @@
+<!-- ACTIVITY 3.1: HTML VIDEO AND AUDIO TAG
+
+this file shall include the following tags: <video> and <audio> elements-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACTIVITY 3.1 | HTML Video and Audio Tag</title>
+    <style> /*initialized this style tag to remove the spacings of the following*/
+       p { margin: 0; } /* removes spacing between paragraphs */
+       li { margin-bottom: 0; } /* removes spacing between list items */
+  </style>
+</head>
+<body>
+  <h2>HTML Video and Audio Tag</h2>
+
+  <ol>
+    <li><p>The video has a dimension of 360 x 220 pixels.</p>
+      <video width="360" height="220" controls>
+      <source src="seagulls.mp4" type="video/mp4">
+      </video></li>
+    <li><p>The dimensions are the same, but this time the video will<i> automatically replay from the beginning once it ends.</i></p>
+      <video width="360" height="220" controls loop>
+      <source src="seagulls.mp4" type="video/mp4">
+      </video></li>
+    <li><p>This time, audio is embedded on the website.</p>
+        <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        </audio></li>
+    <li><p>The same audio is used, but it is <b>muted</b>; setting the volume of the audio to <b>0.</b></p>
+      <audio controls muted>
+      <source src="audio.mp3" type="audio/mp3">
+      </audio>
+  </ol>
+  
+</body>
+</html>

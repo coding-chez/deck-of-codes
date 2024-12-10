@@ -1,0 +1,290 @@
+/* GLOBAL STYLES */
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #B99470;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #B99470;
+}
+
+/* HEADER STYLES */
+
+header {
+  background-color: #76453B;
+  padding: 15px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  font-family: 'Great Vibes', cursive;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .col-md-6 {
+  width: 50%;
+  text-align: center;
+}
+
+header .col-md-2 {
+  width: 16.66%;
+  text-align: center;
+}
+
+header form {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+header form input[type="text"] {
+  float: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+header form button {
+  margin-left: 5px;
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #EAC696;
+  color: #333;
+  font-size: 14px;
+}
+
+header form button img {
+  width: 15px;
+  height: 15px;
+}
+
+header form button:hover {
+  background-color: #fff;
+}
+
+header .btn {
+  margin-left: 5px;
+  float: right;
+  border-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #EAC696;
+  color: #333;
+}
+
+header .btn:hover {
+  background-color: #fff;
+}
+
+/* MAIN STYLES */
+
+main {
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.recipe {
+  padding: 15px;
+  background-color: #EAC696;
+  border: 2px solid #76453B;
+  border-radius: 5px;
+}
+
+.recipe .image {
+  margin-bottom: 10px;
+}
+
+.recipe .image img {
+  width: 100%;
+  height: 150px;
+}
+
+.recipe .content {
+  height: 100%;
+}
+
+.recipe .content h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.recipe .content p {
+  margin-bottom: 5px;
+}
+
+.recipe .content .read-more {
+  float: right;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 2px solid #76453B;
+  border-radius: 5px;
+  background-color: #EFBC9B;
+  color: #333;
+  font-size: 14px;
+}
+
+.recipe .content .read-more:hover {
+  background-color: #D6DAC8;
+}
+
+/* FILTER STYLES */
+
+.filter-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #76453B;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.filter-by ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-by li {
+  margin-bottom: 5px;
+}
+
+.filter-by input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.filter-by label {
+  font-size: 14px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #76453B;
+  color:#fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  header .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .col-md-6 {
+    width: 100%;
+  }
+
+  header .col-md-2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe {
+    margin-bottom: 20px;
+  }
+
+  .filter-by {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .row {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  header .col-md-6 {
+    width: 100%;
+  }
+
+  header .col-md-2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+}
+```-columns: 1fr;
+  }
+}

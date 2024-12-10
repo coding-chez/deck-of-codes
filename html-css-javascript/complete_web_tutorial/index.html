@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML and JS DOM</title>
+	<!-- CSS STYLES -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- HTML TAGS ARE HERE -->
+	<h2 id="empty_header"></h2>
+	<h3>Asking for user name using JS and printing the user name using JS.</h3>
+	<p id = "empty_paragraph"></p>
+
+
+	<!-- PLACE JAVASCRIPT HERE -->
+	<!-- EXTERNAL JS -->
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			setUserName("empty_paragraph");
+		});
+	</script>
+	
+	<!-- INTERNAL JS -->
+	<script type="text/javascript">
+		console.log('Hello World!');
+		// alert('Hello World!')
+	</script>
+	<script type="text/javascript">
+		let id= document.getElementById("empty_header");
+		id.innerHTML = 'Header text added using JS.';
+	</script>
+</body>
+</html>

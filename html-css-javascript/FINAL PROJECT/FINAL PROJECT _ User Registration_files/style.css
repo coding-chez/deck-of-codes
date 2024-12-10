@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1575573516830-7f2a75401048?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  padding: 45px 65px 10px 65px;
+}
+
+h2 {
+  font-family: 'Lucida Sans Unicode';
+  color: #fff;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: 'Courier New', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 13px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  display: inline-block;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #0087db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21515d;
+}

@@ -1,0 +1,112 @@
+body {
+  font-family: Garamond, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0B0C10;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #66FCF1;
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#user-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1F2833;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#user-form label {
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #66FCF1;
+}
+
+#user-form input[type="text"],
+#user-form input[type="date"],
+#user-form input[type="radio"] {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C5C6C7;
+  border-radius: 3px;
+}
+
+#user-form .form-group {
+  margin-bottom: 10px;
+}
+
+#user-form .radio-group {
+  display: inline-flex;
+}
+
+#user-form .radio-group label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+#user-form .button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#user-form input[type="submit"] {
+  background-color: #45A29e;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#user-form input[type="reset"] {
+  background-color: #F44;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#user-info-table th, #user-info-table td {
+  padding: 10px;
+  text-align: left;
+  border:1px solid white;
+  border-bottom: 1px solid #C5C6C7;
+}
+
+#user-info-table th {
+  background-color: #1F2833;
+  color: #45A29e;
+}
+
+/* row color customization */
+#user-info-table tr:nth-child(odd) {
+  background-color: #C5C6C7;
+}
+
+#user-info-table tr:nth-child(even) {
+  background-color: #45A29e; 
+}
