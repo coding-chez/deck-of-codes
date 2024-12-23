@@ -5,7 +5,7 @@
 </div>
 
 <h5 align="center">
-<b>The purpose of this repository is to store all the codes from</b> <i>different programming languages</i> <b>that I've encountered in various activities @school.</b>
+<b>The purpose of this repository is to store all the codes from</b> <i>different programming languages</i> <b>that I've encountered in various school activities and such...</b>
 </h5>
 
 <h1>
