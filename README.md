@@ -1,6 +1,6 @@
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Century+Gothic&duration=4000&pause=1000&color=1AF4F7&center=true&vCenter=true&width=435&separator=%3C&lines=welcome+to+the+%22deck-of-codes%22+%3A%3E%3Cresources+for+future+purposes+;%3E)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=895AC5&width=435&separator=%3C&lines=welcome+to+the+deck-of-codes!%3Cresources+for+future+purposes+;%3E)](https://git.io/typing-svg)
 
 </div>
 
